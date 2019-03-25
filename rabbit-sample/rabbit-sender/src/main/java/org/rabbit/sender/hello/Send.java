@@ -1,4 +1,4 @@
-package org.rabbit.hello;
+package org.rabbit.sender.hello;
 
 import com.rabbitmq.client.ConnectionFactory;
 import com.rabbitmq.client.Connection;

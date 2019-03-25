@@ -1,4 +1,4 @@
-package org.rabbit.hello;
+package org.rabbit.receiver.hello;
 
 import com.rabbitmq.client.Channel;
 import com.rabbitmq.client.Connection;
@@ -22,6 +22,7 @@ public class Recv {
             String message = new String(delivery.getBody(), "UTF-8");
             System.out.println(" [x] Received '" + message + "'");
         };
+        System.out.println("this receiver should start first");
         channel.basicConsume(QUEUE_NAME, true, deliverCallback, consumerTag -> { });
     }
 }
