@@ -25,5 +25,7 @@
     <modules>
     <module>rabbit-sender</module>
     <module>rabbit-receiver</module>
+    <module>spring-rabbit-sender</module>
+    <module>spring-rabbit-receiver</module>
   </modules>
 </project>
