@@ -16,7 +16,6 @@ public class TopicReceiverConfig {
 	        return new TopicExchange("tut.topic");
 	    }
 
-	    private static class ReceiverConfig {
 
 	        @Bean
 	        public Queue autoDeleteQueue5() {
@@ -52,7 +51,6 @@ public class TopicReceiverConfig {
 	                .with("lazy.#");
 	        }
 
-	    }
 
 	    @Bean
 	    public TopicsReceiver topicsReceiver() {

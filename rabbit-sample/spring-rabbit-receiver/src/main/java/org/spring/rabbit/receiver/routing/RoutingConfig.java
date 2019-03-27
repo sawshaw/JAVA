@@ -26,22 +26,22 @@ public class RoutingConfig {
 	}
 
 	@Bean
-	public Binding binding1a(DirectExchange direct, Queue autoDeleteQueue3) {
+	public Binding binding3a(DirectExchange direct, Queue autoDeleteQueue3) {
 		return BindingBuilder.bind(autoDeleteQueue3).to(direct).with("orange");
 	}
 
 	@Bean
-	public Binding binding1b(DirectExchange direct, Queue autoDeleteQueue3) {
+	public Binding binding3b(DirectExchange direct, Queue autoDeleteQueue3) {
 		return BindingBuilder.bind(autoDeleteQueue3).to(direct).with("black");
 	}
 
 	@Bean
-	public Binding binding2a(DirectExchange direct, Queue autoDeleteQueue4) {
+	public Binding binding4a(DirectExchange direct, Queue autoDeleteQueue4) {
 		return BindingBuilder.bind(autoDeleteQueue4).to(direct).with("green");
 	}
 
 	@Bean
-	public Binding binding2b(DirectExchange direct, Queue autoDeleteQueue4) {
+	public Binding binding4b(DirectExchange direct, Queue autoDeleteQueue4) {
 		return BindingBuilder.bind(autoDeleteQueue4).to(direct).with("black");
 	}
 	
